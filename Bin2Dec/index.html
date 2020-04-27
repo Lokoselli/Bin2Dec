@@ -1,0 +1,24 @@
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<body>
+  <div class="container">
+    <h1>Bin2Dec</h1>
+    <h3>Binary to decimal converter</h3>
+    <p>
+      <form id="binary" onsubmit="binDec()" >
+        <label for="bin" id="bin">Binary:</label>
+        <input class="entrada" type="text" pattern="[01]{1,}" title="Binaries only contain 0's and 1's" placeholder="Enter your Binary" ><br>
+        <input class="converter" type="submit" value="Bin2Dec">
+      </form>
+    </p> 
+    <p> 
+      <form id="decimal" onsubmit="decBin()">
+        <label for="bin" id="bin">Decimal:</label>
+        <input class="entrada" type="text" pattern="[0-9]+" title="Use only numbers" placeholder="Enter your Decimal"><br>
+
+        <input class = "converter" type="submit" value="Dec2Bin">
+      </form>
+    </p>
+  </div>
+  <script src="js/functions.js"></script>
+</body>
+
